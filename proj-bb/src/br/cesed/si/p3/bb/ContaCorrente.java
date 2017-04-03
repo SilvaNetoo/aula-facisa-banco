@@ -18,4 +18,7 @@ public class ContaCorrente extends Conta {
 		super.depositar(valorDeDeposito);
 	}
 	
+	public String toString (){
+		return "Conta [numeroDaConta=" + getConta() + ", saldo=" + getSaldo() + "]";
+	}
 }

@@ -20,7 +20,7 @@ public abstract class Conta {
 	}
 
 	public void sacar(double valorDeSaque) throws Throwable{
-		if(!(valorDeSaque < this.saldo)){
+		if(!(valorDeSaque > this.saldo)){
 			this.saldo -= valorDeSaque;
 		}else{
 			throw new Throwable("Valor de saque é indisponicel, por favor, tente novamente!");
@@ -34,6 +34,14 @@ public abstract class Conta {
 		}else{
 			throw new Throwable("Valor de deposito é menor que zero, por favor, tente novamente!");	
 		}
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
 	}
 
 	public int getAgencia() {

@@ -32,5 +32,11 @@ public class ContaPoupanca extends Conta {
 	public void setJuros(double juros){
 		this.juros = juros;
 	}
+
+	
+	public String toString() {
+		return "ContaPoupanca [juros=" + juros + "]";
+	}
+	
 	
 }
